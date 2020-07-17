@@ -1,0 +1,33 @@
+package programaUm;
+
+import java.util.Scanner;
+
+public class ExercicioUm {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double x, y;
+		
+		System.out.println("Qual é o valor de X? ");
+		x = sc.nextDouble();
+		System.out.println("Qual é o valor de Y? ");
+		y = sc.nextDouble();
+		
+		
+		if ((0 < x) & (y > 0))  {
+		    System.out.println("Ponto localizado no Quadrante 1: " + "(" + x + "," + y + ")");
+		} else if ((0 > x) & (y > 0)){
+			System.out.println("Ponto localizado no Quadrante 2: " + "(" + x + "," + y + ")");
+		} else if ((0 > x) & (y < 0)) {
+			System.out.println("Ponto localizado no Quadrante 3: " + "(" + x + "," + y + ")");
+		} else if ((0 < x) & (y < 0)) {
+			System.out.println("Ponto localizado no Quadrante 4: " + "(" + x + "," + y + ")");
+		} else if ((0 == x) & (y == 0)) {
+			System.out.println("Os dois valores digitados representam um ponto que está na Origem: " + "(" + x + "," + y + ")");
+		} else if ((0 == x) || (y == 0)) {
+			System.out.println("O ponto está localizado sobre o eixo x ou eixo Y: " + "(" + x + "," + y + ")");
+		}
+		
+		sc.close();
+	}
