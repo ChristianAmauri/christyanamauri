@@ -1,0 +1,26 @@
+package programaUm;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioUm {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int num;
+		System.out.println("Qual o Número? ");
+		num = sc.nextInt();
+		
+		if (num%2 == 0) {
+		System.out.println("É Par! ");
+		} 
+		
+		else {
+			System.out.println("É Ímpar! ");
+		}
+		
+		sc.close();
+	}
+
+}

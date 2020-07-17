@@ -1,0 +1,21 @@
+import java.text.DecimalFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ola {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		double area, p, raio;
+		p = 3.14159;
+		raio = sc.nextDouble();
+		
+		area = p * (raio * raio);
+		DecimalFormat formatador = new DecimalFormat("0.0000");
+		//comando a cima para arredondamento e limitar casas decimais. OBS: tem que importar o java.text.DecimalFormat
+		Locale.setDefault(Locale.US); //comando para dizer ao programa que o padrão numério é USA no lugar de vírgula é ponto
+		System.out.println("A área do círculo mede: " + formatador.format(area));
+	}
+
+}
+

@@ -1,0 +1,36 @@
+package programaUm;
+
+import java.util.Scanner;
+
+public class ExercicioUm {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int cod;
+		int quant;
+		
+		System.out.println("Peça o produto pelo o código: " + "Se for Cachorro Qunte digite 1 / " + "Se for XSalada digite 2 / " + "Se for XBancon digite 3 / " + "Se for Torrada digite 4 / " + "Se for Refrigerante digite 5 ");
+		cod = sc.nextInt();
+		System.out.println("Qual a quantidade? ");
+		quant = sc.nextInt();
+		
+		double valor;
+		if (cod == 1)  {
+		    valor = 4 * quant;
+		} else if (cod == 2){
+			valor = 4.5 * quant;
+		} else if (cod == 3) {
+			valor = 5 * quant;
+		} else if (cod == 4) {
+			valor = 2 * quant;
+		} else {
+			valor = 1.5 * quant;
+		}
+		
+		System.out.println("O total: R$ " + valor);
+		
+		sc.close();
+	}
+
+}

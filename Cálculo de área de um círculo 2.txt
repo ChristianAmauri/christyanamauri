@@ -1,0 +1,20 @@
+package programaUm;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioUm {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double raio, area;
+		double P = 3.14159;
+		
+		System.out.println("Qual o vlaor do raio? ");
+		raio = sc.nextDouble();
+		area = P * (Math.pow(raio, 2));
+		
+		System.out.printf("A área desse círculo é igual a: %.2f%n", area);
+		}
+
+}

@@ -1,0 +1,24 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class ola {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int num, hora;
+		double valorhora, sal;
+		System.out.println("Digite o número do funcionário: ");
+		num = sc.nextInt();
+		System.out.println("Digite as horas trabalhadas: ");
+		hora = sc.nextInt();
+		System.out.println("Digite o valor da hora de trabalho: ");
+		valorhora = sc.nextDouble();
+		
+		sal = hora * valorhora;
+		
+		System.out.println("Número do Funcionário: " + num);
+		DecimalFormat formatador = new DecimalFormat("0.00"); //comando para delimitar casas decimais e arrendondar
+		System.out.println("O salário a receber é: " + "R$" + formatador.format(sal));
+	}	
+
+}

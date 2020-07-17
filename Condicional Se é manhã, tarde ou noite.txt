@@ -1,0 +1,29 @@
+package verificar;
+
+import java.util.Scanner;
+
+public class Time {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);		
+		
+		int x;
+		
+		System.out.println("São que horas? ");
+		x = sc.nextInt();
+		
+		if (x <= 12){
+		    System.out.println("Bom dia! ");  
+		} 
+		else if (x <= 18) {
+			System.out.println("Boa Tarde! ");
+		}
+		else {
+			System.out.println("É noite;");
+		}		
+		    sc.close();
+		
+		     
+	}
+}

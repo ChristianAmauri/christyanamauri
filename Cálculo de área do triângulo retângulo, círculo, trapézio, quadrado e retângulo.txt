@@ -1,0 +1,32 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class ola {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		double A, B, C, areaTri, areaCirc, areaTrap, areaQuadr, areaRetang;
+		System.out.println("Digite o valor de A: ");
+		A = sc.nextDouble();
+		System.out.println("Digite o valor de B: ");
+		B = sc.nextDouble();
+		System.out.println("Digite o valor de C: ");
+		C = sc.nextDouble();
+		
+		areaTri = (A*C)/2;
+		double pi = 3.14159;
+		areaCirc = pi * (C *C);
+		areaTrap = ((A + B) * C)/2;
+		areaQuadr = B * B;
+		areaRetang = A * B;
+		
+		DecimalFormat formatador = new DecimalFormat("0.000"); //comando para delimitar casas decimais e arrendondar
+		System.out.println("A área do triângulo é: " + formatador.format(areaTri));
+		System.out.println("A área do círculo é: " + formatador.format(areaCirc));
+		System.out.println("A área do círculo é: " + formatador.format(areaTrap));
+		System.out.println("A área do círculo é: " + formatador.format(areaQuadr));
+		System.out.println("A área do círculo é: " + formatador.format(areaRetang));
+		
+	}	
+
+}
